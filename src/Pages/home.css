@@ -1,0 +1,125 @@
+.countries-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.countries-header h6 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+}
+
+.nav-tabs .nav-link.active {
+  border-color: unset !important;
+  border-bottom: 1px solid #3e3e3e;
+  color: #3d3d3d !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+.nav-tabs .nav-link {
+  border-right: none !important;
+  border-left: none !important;
+  border-top: none !important;
+}
+
+.nav-tabs {
+  border-bottom: none !important;
+}
+
+.nav-link {
+  color: #8b8b8b !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+.line-input-countries-left {
+  border: none;
+  border-top: 3px solid #3d3d3d;
+  outline: none;
+  margin-bottom: 7px;
+  width: 45%;
+  display: flex;
+}
+
+.line-input-countries-right {
+  border: none;
+  border-bottom: 3px solid #3d3d3d;
+  outline: none;
+  width: 45%;
+  display: flex;
+  margin-bottom: 7px;
+}
+.welcome-heading {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 30px 0px;
+}
+
+.welcome-heading h2 {
+  padding: 0px 20px;
+  font-weight: 700 !important;
+}
+
+.empty-div {
+  background-color: #f0f0f0;
+  border: 2px solid #3d3d3d;
+  height: 500px;
+}
+
+.load-more-btn {
+  color: #fcfcfc !important;
+  background-color: #3c3c3c !important;
+  border-radius: 0px !important;
+  border: none !important;
+  margin-bottom: 20px;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+.offcanvas-md {
+  display: none;
+}
+
+@media only screen and (max-width: 840px) {
+  .empty-div {
+    height: 200px;
+  }
+
+  .region-tabs-mobile .nav-link {
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    background: #f9f9f9;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .region-tabs {
+    display: none !important;
+  }
+
+  .hamberger-menu {
+    display: flex;
+  }
+  .welcome-heading {
+    border-top: 3px solid #3d3d3d;
+    border-bottom: 3px solid #3d3d3d;
+    padding: 10px 0px;
+  }
+  .welcome-heading h2 {
+    font-weight: 700;
+  }
+  .line-input-countries-left,
+  .line-input-countries-right {
+    display: none;
+  }
+  .ham-menu-btn {
+    background-color: unset !important;
+    border: none !important;
+    color: #3d3d3d !important;
+  }
+  .countries-header h6 {
+    font-size: 20px !important;
+  }
+}

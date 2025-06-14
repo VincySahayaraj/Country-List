@@ -5,11 +5,15 @@ html {
   overflow-x: hidden; /* Removes horizontal scroll */
 }
 .connect-icons {
-  width: 50px;
+  width: 25px !important;
+  height:25px !important;
+
 }
 
-.connect-icons-fb {
-  width: 60px;
+.icon-outer{
+  border:2px solid #3E3E3E;
+  border-radius: 25px;
+  padding: 10px;
 }
 
 .login-main {
@@ -108,13 +112,17 @@ html {
   padding: 80px 95px 80px 75px;
 }
 .icon-main {
-  margin-top: 15px;
-  gap: 7px;
+  margin-top: 25px;
+  gap: 15px;
   display: flex;
   justify-content: center;
 }
 .sign-in-with {
   display: flex;
+}
+
+.alert-danger {
+  font-size: 12px !important;
 }
 
 .sign-in-with-text {

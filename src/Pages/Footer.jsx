@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "../Components/login.css";
-import Google from "../asserts/icons/google.png";
+import Youtube from "../asserts/icons/youtube.png";
 import Facebook from "../asserts/icons/facebook.png";
 import Linkedin from "../asserts/icons/linkedin.png";
 import Twitter from "../asserts/icons/twitter.png";
@@ -10,10 +10,18 @@ const Footer = () => {
   return (
     <Container className="mt-4">
       <div className="icon-main">
-        <img src={Google} alt="Google" className="connect-icons" />
-        <img src={Facebook} alt="Facebook" className="connect-icons-fb" />
-        <img src={Linkedin} alt="LinkedIn" className="connect-icons" />
-        <img src={Twitter} alt="Twitter" className="connect-icons" />
+        <div className="icon-outer">
+          <img src={Facebook} alt="Facebook" className="connect-icons" />
+        </div>
+        <div className="icon-outer">
+          <img src={Twitter} alt="Twitter" className="connect-icons" />
+        </div>
+        <div className="icon-outer">
+          <img src={Linkedin} alt="LinkedIn" className="connect-icons" />
+        </div>
+        <div className="icon-outer">
+          <img src={Youtube} alt="Google" className="connect-icons" />
+        </div>
       </div>
       <div className="copyrights-div">
         <p>Example@email.com</p>

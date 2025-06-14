@@ -15,14 +15,24 @@ const Login = () => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
+  // validation format
   const validatePassword = (pwd) => {
     return /^(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z\d])[A-Za-z\d\W]{8,}$/.test(pwd);
   };
 
+  // Form Submisssion
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!email || !validatePassword(password)) {
-      setError("Invalid email or password format.");
+
+    // Validation for email and password
+    if (!email) {
+      setError("Email is required.");
+      return;
+    }
+    if (!validatePassword(password)) {
+      setError(
+        "Password must be at least 8 characters long and include at least one uppercase letter, one digit, and one special character."
+      );
       return;
     }
     console.log("Login Form:::" + email + password + keepSignedIn);
@@ -37,7 +47,9 @@ const Login = () => {
             <h2>Sign In</h2>
             <h6>
               New User?
-              <span className="create-an-account">&nbsp;&nbsp; Create an account</span>
+              <span className="create-an-account">
+                &nbsp;&nbsp; Create an account
+              </span>
             </h6>
           </div>
 
@@ -85,10 +97,22 @@ const Login = () => {
             </div>
           </Form>
           <div className="icon-main">
-            <img src={Google} alt="Google" className="connect-icons" />
-            <img src={Facebook} alt="Facebook" className="connect-icons-fb" />
-            <img src={Linkedin} alt="LinkedIn" className="connect-icons" />
-            <img src={Twitter} alt="Twitter" className="connect-icons" />
+            <div className="icon-outer">
+              {" "}
+              <img src={Google} alt="Google" className="connect-icons" />
+            </div>
+            <div className="icon-outer">
+              {" "}
+              <img src={Facebook} alt="Facebook" className="connect-icons" />
+            </div>
+            <div className="icon-outer">
+              {" "}
+              <img src={Linkedin} alt="LinkedIn" className="connect-icons" />
+            </div>
+            <div className="icon-outer">
+              {" "}
+              <img src={Twitter} alt="Twitter" className="connect-icons" />
+            </div>
           </div>
         </div>
       </Col>

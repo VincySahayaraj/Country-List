@@ -78,10 +78,10 @@ const Home = () => {
 
       {/* slider */}
       <Row>
-        <Col xs={12} md={8} className="order-2 order-md-1">
+        <Col xs={12} md={9} className="order-2 order-md-1">
           <Slider />
         </Col>
-        <Col xs={12} md={4} className="order-1 order-md-2">
+        <Col xs={12} md={3} className="order-1 order-md-2">
           <div className="empty-div"></div>
         </Col>
       </Row>
